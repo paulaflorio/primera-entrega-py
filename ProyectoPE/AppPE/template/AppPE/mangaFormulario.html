@@ -1,0 +1,18 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<h3>Pagina de inicio</h3>
+{% endblock %}
+}
+
+{% block section_form %}
+<form action="{% url 'mangaFormulario' %}" method="POST"> {% csrf_token %}
+    <h4>Ingrese los datos del Manga:</h4>
+   <table>
+       {{miFormulario.as_table}}
+   </table>
+    <input type="submit" value="Enviar form con API">
+</form>     
+
+{% endblock %}
