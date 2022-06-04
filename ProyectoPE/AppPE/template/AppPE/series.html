@@ -1,10 +1,8 @@
 {% extends "appPE/padre.html" %}
 {% load static %}
-{% block contenidoQueCambia %}
-<h3>Pagina de inicio</h3>
-{% endblock %}
-}
 
-{% block section_name %}
-   <h3>Inicio</h3>                         
+{% block main_content %}
+<a class="nav-link" href="{% url 'serieFormulario'%}">Cargar Series</a>
+<a class="nav-link" href="{% url 'busquedaSerieDirector' %}">Buscar Series por Director</a>
+<a class="nav-link" href="{% url 'busquedaSerieAño' %}">Buscar Series por Año de Estreno</a>
 {% endblock %}

@@ -1,10 +1,9 @@
 {% extends "appPE/padre.html" %}
 {% load static %}
-{% block contenidoQueCambia %}
-<h3>Pagina de inicio</h3>
-{% endblock %}
-}
 
-{% block section_name %}
-   <h3>Inicio</h3>                         
+{% block main_content %}
+<a class="nav-link" href="{% url 'peliculaFormulario'%}">Cargar Peliculas</a>
+<a class="nav-link" href="{% url 'busquedaPeliculaDirector' %}">Buscar Peliculas por Director</a>
+<a class="nav-link" href="{% url 'busquedaPeliculaAño' %}">Buscar Peliculas por Año de Estreno</a>
 {% endblock %}
+

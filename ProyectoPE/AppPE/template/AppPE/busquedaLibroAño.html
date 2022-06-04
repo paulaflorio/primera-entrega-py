@@ -1,0 +1,13 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+
+{% block section_form %}
+<h3>Buscador de libros por Año de Publicación:</h3>
+<form action="{% url 'buscarLibroAño' %}" method="GET">
+    <h4>Ingrese el Año de Publicación:</h4>
+   <input type="number" name="añoPublicacion" id="añoPublicacion">
+    <input type="submit" value="Buscar">
+</form>     
+
+{% endblock %}
+

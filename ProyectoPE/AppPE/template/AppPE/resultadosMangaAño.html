@@ -1,0 +1,16 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+{% block section_results %}
+<h3 class="text-white">Resultados de la busqueda: Estamos buscando los mangas publicados en el año {{añoPublicacion}}</h3>   
+{% if mangas %}
+<ul>
+    {%for m in mangas%}
+    <li class="text-white-50 ">Nombre: {{m.nombre}} Páginas: {{m.paginas}} Autor: {{m.autor}}</li>
+    <br>
+    {%endfor%}
+</ul>
+{% else %}
+<h2 class="text-white">Resultados No Encontrados</h2>
+{% endif %}
+{% endblock %}
+}

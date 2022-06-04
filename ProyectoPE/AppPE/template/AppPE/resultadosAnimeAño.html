@@ -1,0 +1,16 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+{% block section_results %}
+<h3 class="text-white">Resultados de la busqueda: Estamos buscando los animes estrenados en el año: {{añoEstreno}}</h3>   
+{% if animes %}
+<ul>
+    {%for a in animes%}
+    <li class="text-white">Nombre: {{a.nombre}} Temporadas: {{a.temporadas}} Episodios: {{a.episodios}} Director: {{a.director}}</li>
+    <br>
+    {%endfor%}
+</ul>
+{% else %}
+<h2 class="text-white">Resultados No Encontrados</h2>
+{% endif %}
+{% endblock %}
+}

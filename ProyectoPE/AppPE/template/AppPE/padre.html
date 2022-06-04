@@ -39,9 +39,17 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                {% block links_cargar_datos %}
+                {% endblock %}
+                {% block section_name %}
+                {% endblock %}
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
+                        {% block main_content %}
+                        {% endblock %}
                         {% block section_form %}
+                        {% endblock %}
+                        {% block section_results %}
                         {% endblock %}
                     </div>
                 </div>

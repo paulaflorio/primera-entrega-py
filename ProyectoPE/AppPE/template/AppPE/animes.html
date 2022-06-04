@@ -1,10 +1,8 @@
 {% extends "appPE/padre.html" %}
 {% load static %}
-{% block contenidoQueCambia %}
-<h3>Pagina de inicio</h3>
-{% endblock %}
-}
 
-{% block section_name %}
-   <h3>Inicio</h3>                         
+{% block main_content %}
+<a class="nav-link" href="{% url 'animeFormulario'%}">Cargar Animes</a>
+<a class="nav-link" href="{% url 'busquedaAnimeDirector' %}">Buscar Animes por Director</a>
+<a class="nav-link" href="{% url 'busquedaAnimeAño' %}">Buscar Animes por Año de Estreno</a>
 {% endblock %}

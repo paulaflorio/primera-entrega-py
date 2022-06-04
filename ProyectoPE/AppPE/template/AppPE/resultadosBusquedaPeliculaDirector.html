@@ -1,0 +1,16 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+{% block section_results %}
+<h3 class="text-white">Resultados de la busqueda: Estamos buscando las peliculas del director {{director}}</h3>   
+{% if peliculas %}
+<ul>
+    {%for p in peliculas%}
+    <li class="text-white">Nombre: {{p.nombre}} Duracion: {{p.duracion}} Año de Estreno: {{p.añoEstreno}}</li>
+    <br>
+    {%endfor%}
+</ul>
+{% else %}
+<h2 class="text-white">Resultados No Encontrados</h2>
+{% endif %}
+{% endblock %}
+}

@@ -1,0 +1,13 @@
+{% extends "appPE/padre.html" %}
+{% load static %}
+
+{% block section_form %}
+<h3>Buscador de peliculas por Año de Estreno</h3>
+<form action="{% url 'buscarPeliculaAño' %}" method="GET">
+    <h4>Ingrese el año de estreno:</h4>
+   <input type="number" name="añoEstreno" id="añoEstreno">
+    <input type="submit" value="Buscar">
+</form>     
+
+{% endblock %}
+

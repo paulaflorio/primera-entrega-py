@@ -1,10 +1,32 @@
 {% extends "appPE/padre.html" %}
 {% load static %}
-{% block contenidoQueCambia %}
-<h3>Pagina de inicio</h3>
-{% endblock %}
-}
 
-{% block section_name %}
-   <h3>Inicio</h3>                         
+{% block links_cargar_datos %}
+<div class="d-flex flex-column ">
+   <a class="nav-link" href="{% url 'serieFormulario'%}">Cargar Series</a>
+   <a class="nav-link" href="{% url 'busquedaSerieDirector'%}">Buscar Series por Director</a>
+   <a class="nav-link" href="{% url 'busquedaSerieAño'%}">Buscar Series por Año de Estreno</a>
+</div>
+<div class="d-flex flex-column">
+   <a class="nav-link" href="{% url 'peliculaFormulario'%}">Cargar Peliculas</a>
+   <a class="nav-link" href="{% url 'busquedaPeliculaDirector'%}">Buscar Peliculas por Director</a>
+   <a class="nav-link" href="{% url 'busquedaPeliculaAño'%}">Buscar Peliculas por Año de Estreno</a>
+</div>
+<div class="d-flex flex-column">
+   <a class="nav-link" href="{% url 'libroFormulario'%}">Cargar Libros</a>
+   <a class="nav-link" href="{% url 'busquedaLibroAutor'%}">Buscar Libros por Autor</a>
+   <a class="nav-link" href="{% url 'busquedaLibroAño'%}">Buscar Libros por Año de Publicación</a>
+</div>
+<div class="d-flex flex-column">
+   <a class="nav-link" href="{% url 'animeFormulario'%}">Cargar Animes</a>
+   <a class="nav-link" href="{% url 'busquedaAnimeDirector'%}">Buscar Animes por Director</a>
+   <a class="nav-link" href="{% url 'busquedaAnimeAño'%}">Buscar Animes por Año de Estreno</a>
+</div>
+<div class="d-flex flex-column">
+   <a class="nav-link" href="{% url 'mangaFormulario'%}">Cargar Mangas</a>
+   <a class="nav-link" href="{% url 'busquedaMangaAutor'%}">Buscar Mangas por Autor</a>
+   <a class="nav-link" href="{% url 'busquedaMangaAño'%}">Buscar Mangas por Año de Publicación</a>
+</div>
+
 {% endblock %}
+
