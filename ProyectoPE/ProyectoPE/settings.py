@@ -55,7 +55,7 @@ ROOT_URLCONF = 'ProyectoPE.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/paufl/OneDrive/Escritorio/Primera Entrega - Py/ProyectoPE/AppPE/template/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
