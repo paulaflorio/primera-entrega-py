@@ -33,4 +33,7 @@ Mangas:
 -Por autor: Aoyama - Hanokage
 -Por año de publicacion: 1994 - 2011
 
+![image](https://user-images.githubusercontent.com/74881869/172436938-cdcdda6e-0892-44fd-9d7d-1358d0a567c6.png)
+![image](https://user-images.githubusercontent.com/74881869/172436999-d4e9f22e-5be1-4922-b48a-f03979277fe1.png)
+
 
